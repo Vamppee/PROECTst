@@ -21,13 +21,7 @@ public class media implements Initializable {
     private Media media;
     private MediaPlayer mediaPlayer;
     @FXML
-    private Button pauseButton; // fx:id кнопки Pause
-    @FXML
-    private MediaView mediaView; // fx:id контролу mediaView
-    @FXML
-    private Button playButton; // fx:id кнопки Play
-    @FXML
-    private Button resetButton; // fx:id кнопки Reset
+    private MediaView mediaView;
 
     @FXML
     void playbtn(ActionEvent event) {

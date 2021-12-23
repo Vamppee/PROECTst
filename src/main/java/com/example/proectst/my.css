@@ -1,0 +1,15 @@
+.root{
+    -fx-background-color: linear-gradient(to right top, #740343, #77004f, #78005d, #77006c, #71007d, #78028d, #7e069e, #830eaf, #a010c1, #bd10d2, #dc0ee2, #fb09f1);
+}
+.button{
+    -fx-background-color: linear-gradient(to right top, #ff9671, #ff8a77, #ff7e80, #ff738b, #ff6998);
+    -fx-text-fill: black;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+}
+.button:hover{
+    -fx-background-color: linear-gradient(#2221FB, #C4C3FD);
+}
+#txtField{
+    -fx-background-color: #DEDADC;
+}

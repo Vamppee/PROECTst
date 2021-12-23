@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: linear-gradient(to right top, #a45093, #9c5595, #945a96, #8c5e96, #856195, #8a5f90, #8e5e8b, #925d86, #9e5878, #a65568, #a95656, #a65944);;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proectst.HelloControllerOtherLabs">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="200.0">
+         <HBox.margin>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </HBox.margin>
+         <children>
+            <Label text="CHECKBOX:">
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+            </Label>
+            <Label text="Властивості людино-машинного інтерфейсу:" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <CheckBox fx:id="ChBPogod" mnemonicParsing="false" text="Погодженість">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="ChBSDruz" mnemonicParsing="false" text="Дружність">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="ChBGnuch" mnemonicParsing="false" text="Гнучкість">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="ChBSklad" mnemonicParsing="false" text="Складність">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </CheckBox>
+            <Button mnemonicParsing="false" onAction="#checkBoxAnswer" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(to right top, #ff6f91, #e2678a, #c56082, #a95978, #8e516c, #935566, #955a61, #96605e, #aa7b5f, #b29b67, #acbd80, #9bdeac);;" text="Відповісти">
+               <VBox.margin>
+                  <Insets bottom="35.0" left="35.0" right="35.0" top="35.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="LbTrue" prefHeight="49.0" prefWidth="153.0" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="200.0">
+         <HBox.margin>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </HBox.margin>
+         <children>
+            <Label text="CHOICEBOX:">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Файл sample.fxml відповідає за логіку програми." wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <ChoiceBox fx:id="choiceBox" prefWidth="150.0" style="-fx-background-color: linear-gradient(to right top, #ff6f91, #e2678a, #c56082, #a95978, #8e516c, #935566, #955a61, #96605e, #aa7b5f, #b29b67, #acbd80, #9bdeac);;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <Button mnemonicParsing="false" onAction="#choiceBoxAnswer" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(to right top, #ff6f91, #e2678a, #c56082, #a95978, #8e516c, #935566, #955a61, #96605e, #aa7b5f, #b29b67, #acbd80, #9bdeac);;" text="Відповісти">
+               <VBox.margin>
+                  <Insets bottom="35.0" left="35.0" right="35.0" top="35.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="lbChoiceBox" prefHeight="37.0" prefWidth="152.0" />
+            <Label fx:id="labelSlider" prefHeight="19.0" prefWidth="136.0" text="Кількість балів:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Slider fx:id="mySlider" majorTickUnit="10.0" showTickLabels="true" showTickMarks="true" style="-fx-background-color: linear-gradient(to right top, #ff6f91, #e2678a, #c56082, #a95978, #8e516c, #935566, #955a61, #96605e, #aa7b5f, #b29b67, #acbd80, #9bdeac);;" value="20.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Slider>
+         </children></VBox>
+      <VBox prefHeight="200.0" prefWidth="200.0">
+         <HBox.margin>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </HBox.margin>
+         <children>
+            <Label text="COMBOBOX:">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Дана панель надає п'ять частин, в яких можуть розміщуватись компоненти: верхня, нижня, ліва, права та центральна." wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="comboBox" onAction="#comboBoxPressed" prefWidth="150.0" style="-fx-background-color: linear-gradient(to right top, #ff6f91, #e2678a, #c56082, #a95978, #8e516c, #935566, #955a61, #96605e, #aa7b5f, #b29b67, #acbd80, #9bdeac);;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Label fx:id="lbcomboBox" prefHeight="45.0" prefWidth="153.0" />
+            <Label fx:id="labelDate" text="Дата">
+               <VBox.margin>
+                  <Insets bottom="35.0" left="60.0" right="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datePicker" onAction="#getDate">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </DatePicker>
+         </children></VBox>
+      <VBox prefHeight="200.0" prefWidth="200.0">
+         <HBox.margin>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </HBox.margin>
+         <children>
+            <Label text="RADIOBUTTON:">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label text="У якому меню середовища Scene Builder можна змінити загальні налаштування компоненти (Текст, Розмір, Шрифт)?" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+            <RadioButton fx:id="RadioBtnProp" mnemonicParsing="false" text="Properties">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="RadioBtnLay" mnemonicParsing="false" text="Layout">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="RadioBtnCode" mnemonicParsing="false" text="Code">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="RadioBtnHier" mnemonicParsing="false" text="Hierarchy">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <Button mnemonicParsing="false" onAction="#RadioAnswer" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(to right top, #ff6f91, #e2678a, #c56082, #a95978, #8e516c, #935566, #955a61, #96605e, #aa7b5f, #b29b67, #acbd80, #9bdeac);;" text="Відповісти">
+               <VBox.margin>
+                  <Insets left="35.0" top="35.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="radio" prefHeight="35.0" prefWidth="154.0" />
+            <ColorPicker fx:id="colorPicker" onAction="#changeBackground" prefWidth="150.0" style="-fx-background-color: linear-gradient(to right top, #ff6f91, #e2678a, #c56082, #a95978, #8e516c, #935566, #955a61, #96605e, #aa7b5f, #b29b67, #acbd80, #9bdeac);;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ColorPicker>
+         </children></VBox>
+   </children>
+</HBox>
